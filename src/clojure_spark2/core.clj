@@ -75,23 +75,21 @@
 
 (def out-map (map transform-map final-map))
 
-(defn abc[item]
+(defn filter-and-merge [item]
   (into (sorted-map) (filter #(= item (get % "id")) out-map)))
 
-(defn xys[unique-keys out-map]
-  (map abc unique-keys))
+(defn merge-maps-by-id[unique-keys]
+  (map filter-and-merge unique-keys))
 
-(defn xc [in-map]
-  (merge (into {} (map #(prepare-coverage-fields % nil) departments)) in-map)
-  )
+(defn merge-missing-keys [in-map]
+  (merge (into {} (map #(prepare-coverage-fields % nil) departments)) in-map))
 
 (defn final-output-vector[in-vec-map]
-  (map xc in-vec-map)
-  )
+  (map merge-missing-keys in-vec-map))
 
 (->
  (distinct (map #(get % "id") out-map))
- (xys out-map)
+ (merge-maps-by-id)
  (final-output-vector))
 
 ;(defn read-json[sparkSession file-name]
