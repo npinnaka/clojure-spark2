@@ -1,0 +1,3 @@
+{"id":1,"IT_department_desc":"IT","IT_emp_count":250,"IT_expenses":45000,"sales_department_desc":"sales","sales_emp_count":20,"sales_expenses":32000,"marketing_department_desc":"marketing","marketing_emp_count":35,"marketing_expenses":33000}
+{"id":2,"operations_department_desc":"operations","operations_emp_count":300,"operations_expenses":24000,"finance_department_desc":"finance","finance_emp_count":5,"finance_expenses":19000,"HR_department_desc":"HR","HR_emp_count":32,"HR_expenses":17000}
+

@@ -1,0 +1,2 @@
+{"id":1,"cars":[{"department":"IT","emp_count":250,"expenses":45000}, {"department":"SALES","emp_count":20,"expenses":32000}, {"department":"MARKETING","emp_count":35,"expenses":33000}]}
+{"id":2,"cars":[{"department":"OPERATIONS","emp_count":300,"expenses":24000}, {"department":"FINANCE","emp_count":5,"expenses":19000}, {"department":"HR","emp_count":32,"expenses":17000}]}
